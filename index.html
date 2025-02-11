@@ -4,51 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telecom Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="top-nav">
+        <a href="#" class="nav-item">
+            <i class="fas fa-house"></i>
+            Residential Customers
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-building"></i>
+            Business customers
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            E-Mail
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-globe"></i>
+            EN
+        </a>
+    </div>
+
     <header class="header">
-        <img src="/api/placeholder/40/40" alt="Logo" class="logo">
+        <a href="#" class="logo">
+            <i class="fas fa-signal" style="color: #0066cc; font-size: 1.5rem;"></i>
+            Telecom
+        </a>
         <nav class="nav">
-            <a href="#" class="nav-item">Mobile</a>
-            <a href="#" class="nav-item">Internet</a>
-            <a href="#" class="nav-item">TV</a>
-            <a href="#" class="nav-item">Combi subscription</a>
-            <a href="#" class="nav-item">Devices</a>
-            <a href="#" class="nav-item">Insurance</a>
-            <a href="#" class="nav-item">Deals</a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-mobile-alt"></i>
+                Mobile
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-wifi"></i>
+                Internet
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tv"></i>
+                TV
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-box"></i>
+                Combi subscription
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tablet-alt"></i>
+                Devices
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-shield-alt"></i>
+                Insurance
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tag"></i>
+                Deals
+            </a>
         </nav>
         <div class="right-nav">
-            <a href="#" class="nav-item">EN</a>
-            <a href="#" class="nav-item">Login</a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-th"></i>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user"></i>
+                Login
+            </a>
         </div>
     </header>
 
-    <div class="carousel">
-        <div class="slide samsung-slide">
-            <div class="samsung-content">
-                <h1>Samsung Galaxy S25 Ultra on the best network in Switzerland from 349.–</h1>
-                <p>With blue Mobile L and Buyback</p>
-                <a href="#" class="button">Order now</a>
+    <main class="main-content">
+        <div class="card-grid">
+            <div class="card featured-card">
+                <div class="card-content">
+                    <p class="subtext">With blue Mobile L and Buyback</p>
+                    <h1>Samsung Galaxy S25 Ultra on the best network in Switzerland from 349.–</h1>
+                    <a href="#" class="button">
+                        Order now
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card-image">
+                    <img src="scr/img/samsung.png" alt="Samsung Galaxy S25 Ultra">
+                </div>
             </div>
-            <img src="scr/img/samsung.png" alt="Samsung Galaxy S25 Ultra" class="samsung-image">
-        </div>
-        <div class="slide internet-slide">
-            <div class="slide-content">
-                <h1>Best internet and most popular TV subscription</h1>
-                <div class="price">1 year for only 59.90/mth</div>
-                <a href="#" class="button">Learn More</a>
+
+            <div class="card gradient-card">
+                <div class="card-content">
+                    <h1>Best internet and most popular TV subscription</h1>
+                    <div class="price">1 year for only 59.90/mth</div>
+                    <a href="#" class="button">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card gradient-card">
+                <div class="card-content">
+                    <h1>Unlimited Mobile in Switzerland</h1>
+                    <div class="price">1 year for only 49.90/mth</div>
+                    <a href="#" class="button">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="carousel-nav">
-        <div class="carousel-dot active"></div>
-        <div class="carousel-dot"></div>
-    </div>
-
+    </main>
     <script src="script.js"></script>
-    
 </body>
 </html>
